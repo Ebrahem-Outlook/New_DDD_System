@@ -1,0 +1,6 @@
+services:
+  new_ddd_system.api:
+    image: ${DOCKER_REGISTRY-}newdddsystemapi
+    build:
+      context: .
+      dockerfile: New_DDD_System.API/Dockerfile
