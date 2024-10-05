@@ -6,4 +6,28 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\New_DDD_System.Domain\New_DDD_System.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Users\Commands\CreateUser\" />
+    <Folder Include="Users\Commands\DeleteUser\" />
+    <Folder Include="Users\Commands\UpdateUser\" />
+    <Folder Include="Users\Events\UserDeleted\" />
+    <Folder Include="Users\Events\UserUpdated\" />
+    <Folder Include="Users\Events\UserCreated\" />
+    <Folder Include="Users\Queries\GetAll\" />
+    <Folder Include="Users\Queries\GetById\" />
+    <Folder Include="Users\Queries\GetByName\" />
+    <Folder Include="Users\Queries\GetByEmail\" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,6 @@
 
+using New_DDD_System.Infrastructure;
+
 namespace New_DDD_System.API
 {
     public class Program
@@ -10,6 +12,8 @@ namespace New_DDD_System.API
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddInfrastructure(builder.Configuration);
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
